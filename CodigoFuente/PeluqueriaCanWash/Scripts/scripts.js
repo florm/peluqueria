@@ -99,20 +99,6 @@ function mostrarMensajeConfirmacion(contenido, confirmFunction, cancelFunction, 
 }
 
 
-function eliminarDialog(id, nombre) {
-	modalTxtNombre.text(nombre);
-	mostrarMensajeConfirmacion(modalEliminar,
-		"eliminar",
-		null,
-		{ id: id },
-		"Sí, eliminar",
-		"Cancelar",
-		"Eliminar Usuario",
-		"modal-eliminar",
-		false,
-        true);
-}
-
 function llamadaAjax(urlServicioWeb, datosServicioWeb, esAsincronico,
     funcionEscenarioExitoso, funcionEscenarioErroneo, parametrosExtra,
     noMostrarLoading, mensajeLoading) {

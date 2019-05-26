@@ -56,5 +56,14 @@ namespace PeluqueriaCanWash.Controllers
             _servicioUsuario.Eliminar(id);
             return Json("");
         }
+
+        public ActionResult Blanquear(int id)
+        {
+
+            _servicioUsuario.BlanquearPassword(id);
+            return RedirectToAction("Index");
+        }
+
+
     }
 }

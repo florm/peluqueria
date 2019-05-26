@@ -14,7 +14,7 @@ var txtUsuarioId = $("#txtUsuarioId");
 var chkBlanquear = $("#chkBlanquear");
 
 btnContinuar.click(function () {
-	//if (!validarCampos()) return;
+	if (!validarCampos()) return;
     activarTab(tabDatosUsuario, tabRoles);
 });
 
@@ -69,7 +69,6 @@ function errorCrearModificarUsuario() {
 function activarTab(tabActual, tabSiguiente) {
 	tabSiguiente.removeClass("disabled");
 	tabSiguiente.tab("show");
-	//tabActual.addClass("disabled");
 }
 
 function validarCampos() {

@@ -8,6 +8,7 @@
 }
 <script>
     var eliminarUsuarioController = '@Url.Action("Eliminar", "Usuarios")';
+    var blanquearUsuarioController = '@Url.Action("Blanquear", "Usuarios")';
     var listaUsuarioController = '@Url.Action("Index", "Usuarios")';
 
 </script>
@@ -19,7 +20,6 @@
         <thead>
         <tr>
             <th>Email</th>
-            <th>Contraseña</th>
             <th>Es Cliente</th>
             <th>Acciones</th>
         </tr>
@@ -30,9 +30,6 @@
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.Email)
-                </td>
-                <td>
-                    *******
                 </td>
                 <td>
                     @if (item.RolId == 1)
@@ -52,7 +49,8 @@
 
                 </td>
                 <td>
-                    <div class="d-flex flex-row">
+                    <div class="d-flex flex-row align-items-center">
+                        <a class="blanquear" usuarioid="@item.Id" usuarioEmail="@item.Email">Blanquear Contraseña</a>
                         <a class="botones" href="@Url.Action("Detalles", "Usuarios", new {id = item.Id})" title="Modificar">
                             <i class="fa fa-edit" aria-hidden="true"></i>
                         </a>
@@ -79,6 +77,15 @@
     <div style="width: 100%;" id="modalEliminar" class="text-center">
         <p>
             Se eliminar&aacute; el usuario <span id="modalTxtNombre" class="modal-texto-variable"></span>.
+        </p>
+        <p class="modal-texto-variable">¿Está seguro?</p>
+    </div>
+</div>
+<div style="display: none">
+    <div style="width: 100%;" id="modalBlanquear" class="text-center">
+        <p>
+            Se blanquear&aacute; la contraseña del usuario <span id="modalTxtUsuario" class="modal-texto-variable"></span>.
+            Recuerde que las contraseñas blanqueadas quedan con el valor 1234.
         </p>
         <p class="modal-texto-variable">¿Está seguro?</p>
     </div>

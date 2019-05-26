@@ -285,3 +285,10 @@ input[type="checkbox"]:checked + label:before {
     background-color: #6a1b9a;
     border-color: #6a1b9a;
 }
+
+
+
+.blanquear {
+    cursor: pointer !important;
+    text-decoration: underline !important;
+}
