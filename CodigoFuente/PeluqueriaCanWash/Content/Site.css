@@ -1,0 +1,287 @@
+﻿
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.contenedor-principal {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.span-error-identifier {
+    display: block;
+}
+
+div.iconos {
+    
+}
+    div.iconos > i {
+        height: 31px;
+        padding: 5px;
+        border: 1px solid #ced4da;
+        border-right: none;
+        border-radius: 0.2rem 0 0 0.2rem;
+    }
+.form-control-sm {
+    border-radius: 0 0.2rem 0.2rem 0;
+    padding-right: calc(1.5em + 0.75rem);
+}
+/*.header {
+    display: flex;
+    justify-content: center;
+    background: white;
+}*/
+.logo {
+    width: 20%;
+    height: 40%;
+}
+
+.botones {
+    color: #000000;
+    padding: 10px;
+}
+
+.div-contenedor-alertas {
+    position: absolute;
+    z-index: 999999;
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: 68px;
+}
+
+.div-contenedor-alertas.sticky-alerta {
+    top: 0;
+    position: fixed;
+}
+
+.modal-texto-variable {
+    font-weight: 500;
+}
+
+.modal-eliminar .btn-confirm {
+    color: white;
+    background-color: #dc3545;
+    background-image: none;
+    border-color: #dc3545;
+}
+
+.modal .btn-confirm {
+    background: #43d260;
+    border: solid 1px #43d160;
+}
+
+.modal .btn-cancel {
+    background: #ced5da;
+    border: solid 1px #ced5da;
+}
+
+div[id^='alertacustom'] {
+    background: #43d160;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.36;
+    padding-top: 12px;
+    padding-bottom: 11px;
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+.btn-limpiar {
+    background-color: #ced5da;
+}
+
+.btn-volver {
+    background-color: #00796b;
+}
+/*.contenedor-botones {
+    background-color: #1fb6ff;
+    margin-top: 26px;
+    height: 32px;
+    line-height: 1;
+}*/
+.btn {
+    color: #ffffff;
+}
+
+.btn-buscar {
+    background-color: #5cb85c;
+}
+
+.checkbox input[type="checkbox"] + label:before {
+    box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, .1);
+}
+
+
+input[type="checkbox"]:checked + label:before {
+    background-color: #6a1b9a;
+    border-color: #6a1b9a;
+}
+
+
+.checkbox input[type="checkbox"]:checked + label:after {
+    color: #fff;
+}
+
+.checkbox label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    padding-left: 7px;
+}
+
+    .checkbox label:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        left: 4px;
+        top: 4px;
+        margin-left: -20px;
+        border: 1px solid #cccccc;
+        border-radius: 2px;
+        background-color: #fff;
+        -webkit-transition: border .15s ease-in-out, color .15s ease-in-out;
+        -o-transition: border .15s ease-in-out, color .15s ease-in-out;
+        transition: border .15s ease-in-out, color .15s ease-in-out;
+        cursor: pointer;
+    }
+
+    .checkbox label:after {
+        display: inline-block;
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        left: 4px;
+        top: 1px;
+        margin-left: -20px;
+        padding-left: 1px;
+        padding-top: 0;
+        font-size: 11px;
+        color: #555555;
+        cursor: pointer;
+    }
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+    .checkbox input[type="checkbox"]:focus + label:before {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+
+    .checkbox input[type="checkbox"]:checked + label:after {
+        font-family: "FontAwesome", sans-serif;
+        content: "\f00c";
+    }
+
+.checkbox label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.85;
+    letter-spacing: normal;
+    text-align: left;
+    vertical-align: top;
+}
+
+
+/*tabs*/
+
+/*.nav-tabs {
+    border-bottom: none;
+}*/
+
+.nav-tabs .nav-item {
+    margin-right: 4px;
+}
+
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        font-weight: 600;
+        color: #ffffff;
+        background-color: #6a1b9a;
+
+    }
+
+.nav-tabs .nav-link {
+    background-color: #b0c4d3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.85;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.tab-content > .active {
+    margin-top: -25px;
+    background-color: #ffffff;
+    border: solid 1px #e4eaec;
+    padding: 0 20px;
+    /*border-top: none;*/
+}
+
+.tab-content > .active :first-child.seccion {
+    border-top: none;
+}
+
+.roles {
+    height: 100px;
+}
+
+#selRoles {
+    padding-right: 4rem;
+}
+
+
+/*paginado*/
+.paginado {
+    color: #ffffff;
+}
+
+.paginado a {
+    color: #000000;
+}
+.pagination-container {
+    text-align: center;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #6a1b9a;
+    border-color: #6a1b9a;
+}
