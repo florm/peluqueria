@@ -17,7 +17,7 @@ namespace PeluqueriaCanWash.Controllers
         {
             
             var usuarios = _servicioUsuario.GetAll();
-            return View(usuarios.ToPagedList(pag ?? 1, 2));
+            return View(usuarios.ToPagedList(pag ?? 1, 3));
         }
 
         public ActionResult Crear()

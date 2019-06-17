@@ -20,5 +20,7 @@ namespace PeluqueriaCanWash.Models
         public Nullable<int> RolId { get; set; }
     
         public virtual Rol Rol { get; set; }
+
+        
     }
 }

@@ -292,3 +292,13 @@ input[type="checkbox"]:checked + label:before {
     cursor: pointer !important;
     text-decoration: underline !important;
 }
+
+a, a:hover {
+    color: #6a1b9a;
+}
+
+.table-responsive {
+    -webkit-box-shadow: 6px 4px 29px -18px rgba(0,0,0,0.82);
+    -moz-box-shadow: 6px 4px 29px -18px rgba(0,0,0,0.82);
+    box-shadow: 6px 4px 29px -18px rgba(0,0,0,0.82);
+}
